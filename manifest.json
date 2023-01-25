@@ -1,0 +1,44 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+    "manifest_version": 2,
+	"name": "Mr. E - Find B2B contacts universally",
+	"short_name": "Mr. E - Find B2B contacts universally",
+	"author": "Mr E",
+	"description": "Mr. E - the easiest way to find direct contact numbers of professionals & decision-makers",
+	"version": "1.9.5",
+	"background": {
+	    "scripts":["js/jquery.js","js/crypto-js.js","js/background.js","js/main.js"]
+	},
+	"content_scripts": [
+		{
+		  "matches": ["*://*/*"],
+		  "exclude_matches":["https://*.naukri.com/*"],
+		  "all_frames":false,
+		  "js": ["/js/content.js"],
+		  "run_at": "document_end" 
+		}
+	],
+    "default_locale" : "en",
+	"browser_action": {
+		"default_title": "Mr E",
+		"default_icon" : {
+			"19": "images/icons/19.png",
+			"38": "images/icons/38.png" 
+		}
+	
+	},
+	"permissions": [
+		"tabs",
+        "storage"
+    ],
+	"icons": {
+		"16" : "images/icons/16.png",
+		"32" : "images/icons/32.png",
+		"48" : "images/icons/48.png",
+		"64" : "images/icons/64.png",
+		"128": "images/icons/128.png"
+	},
+    "minimum_chrome_version": "55",
+    "content_security_policy": "script-src 'self'; object-src 'self'"
+}

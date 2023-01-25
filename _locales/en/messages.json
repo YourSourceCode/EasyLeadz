@@ -1,0 +1,68 @@
+{
+	"app_description": {
+		"message": ""
+	},
+	"_showcontact": {
+		"message": "Click to get contact"
+	},
+	"_showcontact_loading": {
+		"message": "Loading..."
+	},
+	"_no_credits": {
+		"message": "Upgrade plan"
+	},
+	"_no_credits_1": {
+		"message": "You're out of credits.<br>Please, upgrade your plan if you want more."
+	},
+	"_credits": {
+		"message": "Credits: "
+	},
+	"_info0": {
+		"message": "Can’t find contacts"
+	},
+	"_info1_del": {
+		"message": "Remove from waiting list"
+	},
+	"popop_h1_good": {
+		"message": "Good news!"
+	},
+	"popop_h2_good": {
+		"message": "We've found requested contacts for you:"
+	},
+	"popop_h1_no": {
+		"message": "Visit LinkedIn profile page to find new contacts"
+	},
+	"_login": {
+		"message": "Login"
+	},
+	"_login_mes": {
+		"message": "You should log in to reveal contacts"
+	},
+	"_buy_credits": {
+		"message": "Buy credits"
+	},
+	"_login_top_1": {
+		"message": "Instantly find contacts using Mr. E"
+	},
+	"_login_top_2": {
+		"message": "Log in & visit any profile to view contact"
+	},
+	"_login_top_3": {
+		"message": "Don't have an account?"
+	},
+	"_login_btn_msg": {
+		"message": "Login with email"
+	},
+	"_signup_txt": {
+		"message":"Signup"
+	},
+	"_copy_txt": {
+		"message":"Copied"
+	},
+	"_no_contact_txt": {
+		"message":"Sorry we are unable to find contact information of this person."
+	},
+	"_search_placeholder_txt": {
+		"message":"Search by name or designation"
+	}
+}

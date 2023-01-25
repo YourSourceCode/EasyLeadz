@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mr E</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery.js" ></script>
+    <script src="js/crypto-js.js" ></script>
+    <script src="js/main.js" ></script>
+    <style>
+        .blink_me {
+            background: orange;
+            padding:10px;text-align: center;;
+            animation: blinker 1s linear infinite;
+            overflow: hidden;
+        }
+        .show_verification_link{
+            text-align: center;display:inline-block;font-size:14px;width:100%;color:red;
+        }
+        .report_contact{
+            display: table;font-size: 12px;background: #6f68ff;margin: 0 auto;color: #fff !important;padding: 3px 8px;cursor: pointer;
+        }
+        
+
+        @keyframes blinker {
+        50% {
+            background: transparent;
+        }
+        }
+    </style>
+  </head>
+  <body>
+      <div class="loading_info" id="loading" style="display:block">
+        <?xml version="1.0" encoding="utf-8"?>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin: auto; background: transparent; display: block; shape-rendering: auto;" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+        <path d="M10 50A40 40 0 0 0 90 50A40 42 0 0 1 10 50" fill="#07abcc" stroke="none">
+            <animateTransform attributeName="transform" type="rotate" dur="1s" repeatCount="indefinite" keyTimes="0;1" values="0 50 51;360 50 51"></animateTransform>
+        </path>
+        </svg>
+      </div>
+      <div id="mySidenav" class="sidenav">
+        <a href="#" class="closebtn" >&times;</a>
+        <a class="firstMenu" href="https://dashboard.easyleadz.com" target="_blank">Dashboard</a>
+        <a class="normalMenu" href="https://dashboard.easyleadz.com/mylist" target="_blank">My List</a>
+        <a class="normalMenu" href="https://dashboard.easyleadz.com/myteam" target="_blank">My Team</a>
+        <a class="normalMenu" href="https://dashboard.easyleadz.com/pricing" target="_blank">Pricing</a>
+        <a class="normalMenu" href="https://dashboard.easyleadz.com/myupload" target="_blank">Bulk Upload</a>
+        <a class="normalMenu" href="https://dashboard.easyleadz.com/search" target="_blank">Bulk Search</a>
+        <a class="normalMenu" href="https://dashboard.easyleadz.com/mysettings" target="_blank">My Settings</a>
+        <a class="normalMenu" href="https://dashboard.easyleadz.com/share" target="_blank">Free Credits</a>
+        <a class="normalMenu" href="https://dashboard.easyleadz.com/myinvoices" target="_blank">My Invoices</a>
+        
+      </div>
+      <main id="mrepover" class="imp_hide_">
+        <header>
+            <label class="imp_logo"><span class="img_title" id="mr_title_top">Mr E</span></label>
+            <label class="imp_copied_label imp_hide_"></label>
+            <label class="action_right">
+                <a href="https://www.youtube.com/watch?v=Tvc-SMhdH_Q&t=2s" target="_blank">Watch Demo</a>
+                <a href="https://www.easyleadz.com/schedule-demo/" target="_blank">Book Demo</a>
+            </label>
+        </header>
+        <section>
+            <div class="frefresh imp_hide_">
+                <a class="fricon" href="#">Click here</a> to view people working in <span id="fsite"></span>
+            </div>
+            <div class="imp_content imp_hide_">
+                <div  style="padding:10px;text-align:center;background:lightskyblue">Pin your chrome extension, <a href="https://dashboard.easyleadz.com/extensioninfo?ref=extension_info_click" target="_blank" >know more </a></div>
+                <div id="Unotify" class="imp_hide_"></div>
+                <div id="Uinfo" class="imp_hide_">
+                    <div id="lname" class="imp_lname">
+                        Welcome : <span id="uname"></span> 
+                        <button id="ulogout"  class="hpaybtn">Logout</button>
+                        <br/>
+                        <span id="uemail"></span><span id="pemail"></span>
+                    </div>
+                </div>
+                
+                <div class="imp_profile">
+                    <button id="gbacktrv" class="imp_hide_" style="padding: 3px; margin-bottom: 5px;" > &lt; Back</button>
+                    <button id="gbackpeople" class="imp_hide_" style="display: none;padding:3px;margin-bottom: 5px;" > &lt; Back</button>
+                    <p class="imp_credit"></p>
+                    <p class="imp_name"></p>
+                    <p class="imp_specialty"></p>
+                    <p class="imp_location"></p>
+                    
+                    <ul class="imp_contacts imp_hide_">
+                        
+                    </ul>
+                    <div class="imp_info imp_hide_"></div>
+                    <span class="imp_btn show_contact imp_hide_">Click to get contact</span>
+                    <span class="report_contact imp_hide_">Report wrong number</span>
+                    <span class="reprt_message imp_hide_">Thank you for reporting wrong number. We will refund your credit, if eligible.</span>
+                    <span class="show_verification_link imp_hide_" >
+                        To use all FREE Credits - Please verify your account via your work EMAIL. To prevent SPAM we have made this compulsory. <br/>
+
+                        Please verify your account with your work email. <a href="https://dashboard.easyleadz.com/verifyaccount" target="_blank">Click here to verify</a></span>
+                    <p class="imp_notify"></p>
+                    <div class="imp_comp_main imp_hide_">
+                        <div class="mr_e_company_section">
+                    		<label class="hxccgmydvbcd"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"width="13" height="13" viewBox="0 0 226 226" style=" fill:#000000;">
+                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,226v-226h226v226z" fill="none"></path>
+                            <g fill="#7988f7"><path d="M18.83333,28.25v169.5h94.16667h94.16667v-131.83333h-94.16667v-37.66667zM37.66667,47.08333h18.83333v18.83333h-18.83333zM75.33333,47.08333h18.83333v18.83333h-18.83333zM37.66667,84.75h18.83333v18.83333h-18.83333zM75.33333,84.75h18.83333v18.83333h-18.83333zM113,84.75h75.33333v94.16667h-75.33333v-18.83333h18.83333v-18.83333h-18.83333v-18.83333h18.83333v-18.83333h-18.83333zM150.66667,103.58333v18.83333h18.83333v-18.83333zM37.66667,122.41667h18.83333v18.83333h-18.83333zM75.33333,122.41667h18.83333v18.83333h-18.83333zM150.66667,141.25v18.83333h18.83333v-18.83333zM37.66667,160.08333h18.83333v18.83333h-18.83333zM75.33333,160.08333h18.83333v18.83333h-18.83333z">
+                            </path></g></g></svg> Name</label>
+                    		<span id="mr_e_com_name"></span>
+                    	</div>
+                    	<div class="mr_e_company_section">
+                    		<label class="hxccgmydvbcd"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13" height="13" viewBox="0 0 172 172" style=" fill:#000000;">
+                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path>
+                            <g fill="#7988f7"><path d="M86,17.2c-25.39867,0 -47.58066,13.86893 -59.49453,34.4h13.70625c5.9856,-7.94067 13.96541,-14.30726 23.21328,-18.2862c-3.00427,5.10267 -5.50875,11.30873 -7.44661,18.2862h12.08255c4.52933,-14.09827 11.45466,-22.93333 17.93906,-22.93333c6.4844,0 13.40973,8.83507 17.93906,22.93333h12.08255c-1.93787,-6.97747 -4.44235,-13.18353 -7.44661,-18.2862c9.2536,3.97893 17.23888,10.34553 23.22448,18.2862h13.69505c-11.9196,-20.53107 -34.09586,-34.4 -59.49453,-34.4zM12.53047,68.8l8.99193,34.4h8.24167l5.65495,-21.07448h0.42552l5.74453,21.07448h8.19688l8.99193,-34.4h-9.01432l-4.50156,22.81016h-0.43672l-5.69974,-22.81016h-6.9987l-5.50937,22.81016h-0.43672l-4.56875,-22.81016zM62.8763,68.8l8.98073,34.4h8.25286l5.65495,-21.07448h0.42552l5.74453,21.07448h8.20808l8.98073,-34.4h-9.00312l-4.51276,22.81016h-0.42552l-5.69974,-22.81016h-7.00989l-5.50938,22.81016h-0.43672l-4.56875,-22.81016zM113.22214,68.8l8.99192,34.4h8.25286l5.64375,-21.07448h0.42552l5.74453,21.07448h8.19688l8.99192,-34.4h-9.01432l-4.50157,22.81016h-0.42552l-5.69974,-22.81016h-7.00989l-5.50938,22.81016h-0.42552l-4.57995,-22.81016zM26.50547,120.4c11.91387,20.53107 34.09586,34.4 59.49453,34.4c25.39867,0 47.58066,-13.86893 59.49453,-34.4h-13.69505c-5.9856,7.94067 -13.96541,14.30726 -23.21328,18.2862c3.00427,-5.10267 5.49755,-11.30873 7.43542,-18.2862h-12.08255c-4.5236,14.09827 -11.44346,22.93333 -17.92786,22.93333c-6.4844,0 -13.40973,-8.83507 -17.93906,-22.93333h-12.09375c1.93787,6.97747 4.44235,13.18353 7.44661,18.2862c-9.2536,-3.97893 -17.22768,-10.34553 -23.21328,-18.2862z">
+                            </path></g></g></svg> Website</label>
+                    		<span id="mr_e_com_web"</span>
+                    	</div>
+                    	<div class="mr_e_company_section">
+                    		<label class="hxccgmydvbcd"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13" height="13" viewBox="0 0 172 172" style=" fill:#000000;">
+                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path>
+                            <g fill="#7988f7"><path d="M86,14.33333c-7.91608,0 -14.33333,6.41725 -14.33333,14.33333c0,7.91608 6.41725,14.33333 14.33333,14.33333c7.91608,0 14.33333,-6.41725 14.33333,-14.33333c0,-7.91608 -6.41725,-14.33333 -14.33333,-14.33333zM35.83333,21.5c-7.91608,0 -14.33333,6.41725 -14.33333,14.33333c0,7.91608 6.41725,14.33333 14.33333,14.33333c7.91608,0 14.33333,-6.41725 14.33333,-14.33333c0,-7.91608 -6.41725,-14.33333 -14.33333,-14.33333zM136.16667,21.5c-7.91608,0 -14.33333,6.41725 -14.33333,14.33333c0,7.91608 6.41725,14.33333 14.33333,14.33333c7.91608,0 14.33333,-6.41725 14.33333,-14.33333c0,-7.91608 -6.41725,-14.33333 -14.33333,-14.33333zM79.26725,50.81755c-8.47817,2.20017 -14.76725,9.90204 -14.76725,19.05745v41.20833c0,2.3359 1.49972,4.30542 3.58333,5.04606v36.16227c-0.02741,1.93842 0.99102,3.74144 2.66532,4.71865c1.6743,0.97721 3.74507,0.97721 5.41937,0c1.6743,-0.97721 2.69273,-2.78023 2.66532,-4.71865v-37.625h14.33333v37.625c-0.02741,1.93842 0.99102,3.74144 2.66532,4.71865c1.6743,0.97721 3.74507,0.97721 5.41937,0c1.6743,-0.97721 2.69273,-2.78023 2.66532,-4.71865v-36.16227c2.08362,-0.74064 3.58333,-2.71016 3.58333,-5.04606v-41.20833c-0.00358,-9.15542 -6.28909,-16.85729 -14.76725,-19.05745l-4.94108,7.41162l5.375,20.60417l-7.16667,7.16667l-7.16667,-7.16667l5.375,-20.60417zM29.10059,57.98421c-8.47817,2.20017 -14.76725,9.90204 -14.76725,19.05745v34.04167c0,2.3359 1.49972,4.30542 3.58333,5.04606v36.16227c-0.02741,1.93842 0.99102,3.74144 2.66532,4.71865c1.6743,0.97721 3.74507,0.97721 5.41937,0c1.6743,-0.97721 2.69273,-2.78023 2.66532,-4.71865v-37.625h14.33333v37.625c-0.02741,1.93842 0.99102,3.74144 2.66532,4.71865c1.6743,0.97721 3.74507,0.97721 5.41937,0c1.6743,-0.97721 2.69273,-2.78023 2.66532,-4.71865v-36.16227c2.08362,-0.74064 3.58333,-2.71016 3.58333,-5.04606v-34.04167c-0.00358,-9.15542 -6.28909,-16.85729 -14.76725,-19.05745l-4.94108,7.41162l5.375,20.60417l-7.16667,7.16667l-7.16667,-7.16667l5.375,-20.60417zM129.43392,57.98421c-8.47817,2.20017 -14.76725,9.90204 -14.76725,19.05745v34.04167c0,2.3359 1.49972,4.30542 3.58333,5.04606v36.16227c-0.02741,1.93842 0.99102,3.74144 2.66532,4.71865c1.6743,0.97721 3.74507,0.97721 5.41937,0c1.6743,-0.97721 2.69273,-2.78023 2.66532,-4.71865v-37.625h14.33333v37.625c-0.02741,1.93842 0.99102,3.74144 2.66532,4.71865c1.6743,0.97721 3.74507,0.97721 5.41937,0c1.6743,-0.97721 2.69273,-2.78023 2.66532,-4.71865v-36.16227c2.08362,-0.74064 3.58333,-2.71016 3.58333,-5.04606v-34.04167c-0.00358,-9.15542 -6.28909,-16.85729 -14.76725,-19.05745l-4.94108,7.41162l5.375,20.60417l-7.16667,7.16667l-7.16667,-7.16667l5.375,-20.60417z">
+                            </path></g></g></svg> Company Size</label>
+                    		<span id="mr_e_com_csize"></span>
+                    	</div>
+                    	<div class="mr_e_company_section">
+                    		<label class="hxccgmydvbcd"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13" height="13" viewBox="0 0 172 172" style=" fill:#000000;">
+                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path>
+                            <g fill="#7988f7"><path d="M54.825,6.83969c-1.21252,0.067 -2.29991,0.76827 -2.86112,1.84519c-0.56121,1.07691 -0.5131,2.36993 0.12658,3.40216c0,0 11.63144,18.87297 37.34953,18.87297c1.24059,0.01754 2.39452,-0.63425 3.01993,-1.7058c0.62541,-1.07155 0.62541,-2.39684 0,-3.46839c-0.62541,-1.07155 -1.77935,-1.72335 -3.01993,-1.7058c-22.44191,0 -31.45047,-15.52703 -31.45047,-15.52703c-0.58729,-1.01457 -1.65079,-1.66026 -2.82188,-1.71328c-0.11415,-0.00569 -0.22851,-0.00569 -0.34265,0zM86,6.88c-1.24059,-0.01754 -2.39452,0.63425 -3.01993,1.7058c-0.62541,1.07155 -0.62541,2.39684 0,3.46839c0.62541,1.07155 1.77935,1.72335 3.01993,1.7058c12.04,0 21.64781,9.31219 21.64781,9.31219l1.75359,1.75359l2.21719,-1.10859c0,0 6.48807,-3.07719 12.2214,-3.07719c8.79111,0 14.76781,5.87219 14.76781,5.87219c0.86281,0.89866 2.14404,1.26066 3.34955,0.94639c1.20551,-0.31427 2.14694,-1.2557 2.46121,-2.46121c0.31427,-1.20551 -0.04773,-2.48674 -0.94639,-3.34955c0,0 -7.7833,-7.88781 -19.63219,-7.88781c-6.272,0 -11.02861,1.95443 -13.26953,2.96969c-2.4042,-2.2336 -11.10854,-9.84969 -24.57047,-9.84969zM130.94172,34.4l-2.98312,44.72h16.5214v6.88h-34.4v-39.28453l-48.16,22.08453v-22.08453l-55.04,24.5436v93.86094h158.24v-79.12h-7.10172l-3.44,-51.6zM24.08,82.56h6.88v13.76h-6.88zM37.84,82.56h6.88v13.76h-6.88zM55.04,82.56h6.88v13.76h-6.88zM72.24,82.56h6.88v13.76h-6.88zM86,82.56h6.88v13.76h-6.88zM24.08,106.64h6.88v13.76h-6.88zM37.84,106.64h6.88v13.76h-6.88zM55.04,106.64h6.88v13.76h-6.88zM72.24,106.64h6.88v13.76h-6.88zM86,106.64h6.88v13.76h-6.88zM113.52,106.64h13.76v6.88h-13.76zM134.16,106.64h13.76v6.88h-13.76zM24.08,130.72h6.88v13.76h-6.88zM37.84,130.72h6.88v13.76h-6.88zM55.04,130.72h6.88v13.76h-6.88zM72.24,130.72h6.88v13.76h-6.88zM86,130.72h6.88v13.76h-6.88z">
+                            </path></g></g></svg> Industry</label>
+                    		<span id="mr_e_com_industry"></span>
+                    	</div>
+                    	<div class="mr_e_company_section">
+                    		<label class="hxccgmydvbcd"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13" height="13" viewBox="0 0 172 172" style=" fill:#000000;">
+                            <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path>
+                            <g fill="#7988f7"><path d="M41.28,0c-3.78937,0 -6.88,3.09063 -6.88,6.88v6.88h-20.64c-3.99094,0 -6.88,2.88906 -6.88,6.88v137.6c0,3.99094 2.88906,6.88 6.88,6.88h93.14875c-1.89469,-2.10969 -3.57437,-4.4075 -4.99875,-6.88h-88.15v-106.64h144.48v50.31c2.4725,1.42438 4.77031,3.1175 6.88,5.01219v-86.28219c0,-3.99094 -2.88906,-6.88 -6.88,-6.88h-20.64v-6.88c0,-3.78937 -3.09062,-6.88 -6.88,-6.88h-6.88c-3.78937,0 -6.88,3.09063 -6.88,6.88v6.88h-61.92v-6.88c0,-3.78937 -3.09062,-6.88 -6.88,-6.88zM41.28,6.88h6.88v20.64h-6.88zM123.84,6.88h6.88v20.64h-6.88zM13.76,20.64h20.64v6.88c0,3.78938 3.09063,6.88 6.88,6.88h6.88c3.78938,0 6.88,-3.09062 6.88,-6.88v-6.88h61.92v6.88c0,3.78938 3.09063,6.88 6.88,6.88h6.88c3.78938,0 6.88,-3.09062 6.88,-6.88v-6.88h20.64v24.08h-144.48zM34.4,65.36v79.12h62.55156c-0.38969,-2.24406 -0.63156,-4.52844 -0.63156,-6.88h-6.88v-17.2h10.68281c1.11531,-2.43219 2.4725,-4.73 4.01781,-6.88h-14.70063v-17.2h17.2v14.06906c2.05594,-2.33813 4.35375,-4.43438 6.88,-6.24844v-7.82063h24.08v-30.96zM41.28,72.24h17.2v17.2h-17.2zM65.36,72.24h17.2v17.2h-17.2zM89.44,72.24h17.2v17.2h-17.2zM113.52,72.24h17.2v17.2h-17.2zM41.28,96.32h17.2v17.2h-17.2zM65.36,96.32h17.2v17.2h-17.2zM137.6,103.2c-18.97375,0 -34.4,15.42625 -34.4,34.4c0,18.97375 15.42625,34.4 34.4,34.4c18.97375,0 34.4,-15.42625 34.4,-34.4c0,-18.97375 -15.42625,-34.4 -34.4,-34.4zM137.6,110.08c15.17094,0 27.52,12.34906 27.52,27.52c0,15.17094 -12.34906,27.52 -27.52,27.52c-15.17094,0 -27.52,-12.34906 -27.52,-27.52c0,-15.17094 12.34906,-27.52 27.52,-27.52zM137.6,117.29594c-2.06937,0 -3.44,1.38406 -3.44,3.44v13.42406h-13.42406c-2.05594,0 -3.44,1.37063 -3.44,3.44c0,2.06938 1.38406,3.44 3.44,3.44h13.42406v13.42406c0,2.05594 1.37063,3.44 3.44,3.44c2.06938,0 3.44,-1.38406 3.44,-3.44v-13.42406h13.42406c2.05594,0 3.44,-1.37062 3.44,-3.44c0,-2.06937 -1.38406,-3.44 -3.44,-3.44h-13.42406v-13.42406c0,-2.05594 -1.37062,-3.44 -3.44,-3.44zM41.28,120.4h17.2v17.2h-17.2zM65.36,120.4h17.2v17.2h-17.2z">
+                            </path></g></g></svg> Founded</label>
+                    		<span id="mr_e_com_founed"></span>
+                    	</div>
+                    </div>
+                    
+                </div>
+                <div id="mr_e_middle_content" class="imp_hide_">
+                        
+                </div>
+                <div class="imp">
+
+                </div>
+            </div>
+            <div class="imp_main_error imp_hide_"></div>
+            <div class="imp_profile_visit_msg imp_hide_">
+                <p>
+                    Please visit any Person's profile and refresh the page to view their contact.
+                </p>
+            </div>
+            <div class="imp_free_credit_page_msg imp_hide_">
+                <p>
+                    Your free credits are over, please use earn free credits option or upgrade directly to a paid plan.
+                </p>
+            </div>
+            <div class="imp_login_section imp_hide_">
+                <p style="margin-top:0px;font-size: 24px;">Instantly find contacts using Mr. E </p><br>
+                <p class="t-20 t-black t-normal" style="font-size: 16px;">Log in & visit any profile to view contact</p>
+                <br/><a class="hpaybtn plogin" style="padding: 6px 20px;text-decoration:none;font-size: 18px;" >Login with email</a>
+                <br>
+                <!--<p style="font-size:14px;">Don't have an account?&nbsp;<a href="https://dashboard.easyleadz.com/" target="_blank">Signup</a></p>-->
+            </div>
+            
+        </section>
+        <footer class="footer imp_hide_">
+            <a href="https://dashboard.easyleadz.com/" target="_blank" class="hpaybtn">Dashboard</a>
+            <a href="https://dashboard.easyleadz.com/pricing" target="_blank" class="hpaybtn">Upgrade</a>
+            <a href="https://dashboard.easyleadz.com/share" target="_blank" class="hpaybtn" id="freecreditspe">Free Credits</a>
+            <a href="#" id="opnv" style="vertical-align:-webkit-baseline-middle;margin-left:1em"><img src="https://img.icons8.com/material/24/000000/menu--v5.png"/></a>
+        </footer>
+      </main>
+  </body>
+</html>
